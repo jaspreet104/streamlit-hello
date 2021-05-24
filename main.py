@@ -17,7 +17,7 @@ def print_hi(name):
     # My First Streamlit App
     Hello and *welcome* !
     """)
-    number = st.slider("Pick a number", 0, 100)
+    number = st.slider("Pick a number", 0, 100, 10)
 
     chart_data = pd.DataFrame(
         np.random.randn(number, 3),
