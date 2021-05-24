@@ -8,6 +8,15 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
